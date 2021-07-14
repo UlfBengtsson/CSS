@@ -1,0 +1,17 @@
+body {
+  background-color: lightskyblue;
+}
+
+input + label,
+form select {
+  display: block;
+}
+
+form button {
+  border: 1px solid black;
+}
+
+.greenButton {
+  color: black;
+  background-color: limegreen;
+}

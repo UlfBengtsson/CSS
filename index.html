@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="MyStyle.css" />
+  </head>
+  <body>
+    <h1>Hello world!</h1>
+
+    <form action="http://www.lexicon.se" method="POST">
+      <input
+        type="hidden"
+        name="secToken"
+        id="secToken"
+        value="df235sdg345sdf!"
+      />
+
+      <label for="firstName">First Name</label>
+      <input
+        id="firstName"
+        type="text"
+        minlength="2"
+        maxlength="90"
+        placeholder="First Name"
+      />
+
+      <label for="lastName">Last Name</label>
+      <input
+        id="lastName"
+        type="text"
+        minlength="2"
+        maxlength="90"
+        placeholder="Last Name"
+      />
+
+      <label for="age">Age</label>
+      <input id="age" type="number" min="1" max="140" value="1" />
+
+      <label for="birthDate">Birth Date</label>
+      <input id="birthDate" type="date" />
+
+      <label for="genderFemale">Female</label>
+      <input type="radio" name="gender" id="genderFemale" value="Female" />
+
+      <label for="genderMale">Male</label>
+      <input type="radio" name="gender" id="genderMale" value="Male" />
+
+      <select name="codeLang" required>
+        <option disabled>Must select one</option>
+        <option value="Csharp">C#</option>
+        <option value="Java">Java</option>
+        <option value="Cpp">C++</option>
+      </select>
+
+      <!--<input type="submit" value="Send" />-->
+      <button class="greenButton" type="submit">Send</button>
+    </form>
+  </body>
+</html>
